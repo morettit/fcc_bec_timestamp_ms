@@ -10,9 +10,10 @@
   "author": "Moretti Tobia",
   "dependencies": {
     "async": "~0.2.8",
+    "dateformat": "^1.0.12",
+    "ejs": "^2.4.2",
     "express": "~3.2.4",
-    "socket.io": "~0.9.14",
-    "dateformat": "^1.0.12"
+    "socket.io": "~0.9.14"
   },
   "scripts": {
     "start": "node server.js"

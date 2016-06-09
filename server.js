@@ -4,6 +4,14 @@ var express = require('express');
 
 var app = express();
 
+app.set('views', __dirname + '/html');
+app.engine('html', require('ejs').renderFile);
+app.set('view engine', 'ejs');
+
+app.get('/',function(req,res) {
+	res.render('default.html');
+});
+
 app.get('/:date',function(req,res) {
 	var json = undefined;
 	var date = new Date(req.params.date);
